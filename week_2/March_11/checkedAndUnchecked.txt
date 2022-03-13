@@ -9,5 +9,35 @@ public class Test {
   }
 }
 
-// => ArithmeticException
+// => ArithmeticException <<<<<--------------------------------------------------------
 
+b). 
+public class Test {
+  public static void main(String[] args) {        
+    byte num;
+    System.out.println(""Scientech"");
+    num = Byte.parseByte(""Easy"");
+    System.out.println(""num: "" +num);
+  }
+}
+
+// => Compilation Error  <<<<<--------------------------------------------------------
+
+c).
+What will be the output of the following program when run?
+
+public class Test {
+  public static void main(String[] args) {                
+    try {
+      int value = 5;
+      if (value < 10)
+        throw new RuntimeException(""Value is less than 10"");
+    }
+    catch (RuntimeException re) {
+      System.out.println(re.getMessage());
+    }
+    System.out.println(""Outside try-catch block"");        
+  }
+}
+
+// => Compilation Error  <<<<<--------------------------------------------------------
